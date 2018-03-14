@@ -4,9 +4,24 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;    
     background-position: center;
-    background-color: antiquewhite;
-    
+    background-color: antiquewhite; 
 }
+
+@font-face {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Courier New", cursive;
+    font-weight: bold;
+    text-align: center:
+}
+div {
+    font-family: "Georgia", serif;
+    text-align: center:
+}
+
 .sidenavbar a{
 	color: blue;
 }
@@ -28,10 +43,10 @@ body{
     background-color: skyblue;
 }
 .panel-heading-green{
-
+    text-align: center;
 }
 .panel-heading-dark{
-	
+	text-align: center:
 }
 .game{
 	display: relative;
