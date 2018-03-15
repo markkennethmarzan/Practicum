@@ -237,6 +237,9 @@ label {
 
 button {
   border-radius: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
 }
 
 button:focus {
@@ -3968,7 +3971,7 @@ tbody.collapse.show {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 70rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
