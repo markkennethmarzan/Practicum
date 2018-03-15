@@ -57,6 +57,12 @@ body{
 .details img{
 	width: 100%;
 }
+
+.qty{
+	width: 40px;
+	color: #666;
+	text-align: center;
+}
 .footer{
 	background: blue;
 	height: 70px;
