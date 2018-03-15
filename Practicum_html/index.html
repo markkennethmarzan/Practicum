@@ -24,7 +24,7 @@
   <div class="container">
     <div class="navbar-header">
         <a class="navbar-brand" href="#">Practicum</a>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> Navigational Bar</button>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>Navigational Bar</button>
        </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -38,7 +38,20 @@
         <div class="form-group">
           <input name="password" type="password" class="form-control" placeholder="Enter Password">
         </div>
-        <button name="submit" type="submit" class="btn btn-default">Login</button>
+                <button onclick="myFunction()" class="btn btn-primary">LOGIN</button>
+                               <p id="demo"></p>
+                            <script>
+                            function myFunction() {
+                                var txt;
+                                var r = confirm("WELCOME TO OUR WEBSITE!");
+                                if (r == true) {
+                                    txt = "You pressed OK!";
+                                } else {
+                                    txt = "You pressed Cancel!";
+                                }
+                                document.getElementById("demo").innerHTML = txt;
+                            }
+                            </script>
       </form>
     </div>
     <!--/.nav-collapse --> 
@@ -95,29 +108,20 @@
         </ul>
       </div>
     </div>
-    
-  	<div class="col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading panel-heading-green">
-        <h3 class="panel-title">THE WORLD OF MOVIES</h3>
+        <center><h1 class="panel-title">THE WORLD OF MOVIES</h1></center>
       </div>
       <div class="panel-body">
       	<div class="row">
-      		<div class="col-md-4">
       			<a href="2014.html">
-      				<img src="pictures/index/1234.png" alt="" size="7">
+                    <img src="pictures/index/1234.png" alt="" width="750" height="700">
       			</a>
       			</div>
       		</div>
       		</div>    
       	</div>
       </div>
-      
-    </div>
-    </div>
-    <div class="col-md-8"> </div>
-  </div>
-</div>
 <!-- /.container --> 
 <div class="row footer">
 	<div class="container">

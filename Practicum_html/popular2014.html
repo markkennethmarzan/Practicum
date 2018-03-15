@@ -23,7 +23,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">Navigational Bar<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a class="navbar-brand" href="#">Practicum</a> </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -101,19 +101,77 @@
       </div>
       <div class="panel-body">
       	<div class="row">
-                <div class="col-md-15">
-      			<a href="product.html">
-      				<img src="pictures/2014/pop.jpg" alt="" size="5">
-      			</a>
+                <center><div class="col-md-20">
+                    <center><div style="background-image: url(&quot;https://www.w3schools.com/howto/img_fjords.jpg&quot;); background-repeat: no-repeat; background-size: 1800px 1200px; left: 119px; top: 38px; background-position: -457px -214px;"></div>
+                <img id="mymagnifyimage" src="pictures/2014/pop.jpg" width="600" height="600"></center>
+      			<script>
+                    function magnify(imgID, zoom) {
+                      var img, glass, result, w, h, bw;
+                      img = document.getElementById(imgID);
+                      /*create magnifier glass:*/
+                      glass = document.createElement("DIV");
+                      glass.setAttribute("class", "img-magnifier-glass");
+                      /*insert magnifier glass:*/
+                      img.parentElement.insertBefore(glass, img);
+                      /*set background properties for the magnifier glass:*/
+                      glass.style.backgroundImage = "url('" + img.src + "')";
+                      glass.style.backgroundRepeat = "no-repeat";
+                      glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+                      w = glass.offsetWidth / 2;
+                      h = glass.offsetHeight / 2;
+                      /*execute a function when someone moves the magnifier glass over the image:*/
+                      glass.addEventListener("mousemove", moveMagnifier);
+                      img.addEventListener("mousemove", moveMagnifier);
+                      /*and also for touch screens:*/
+                      glass.addEventListener("touchmove", moveMagnifier);
+                      img.addEventListener("touchmove", moveMagnifier);
+                      function moveMagnifier(e) {
+                        var pos, x, y;
+                        /*prevent any other actions that may occur when moving over the image*/
+                        e.preventDefault();
+                        /*get the cursor's x and y positions:*/
+                        pos = getCursorPos(e);
+                        x = pos.x;
+                        y = pos.y;
+                        bw = 3;
+                        /*prevent the magnifier glass from being positioned outside the image:*/
+                        if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+                        if (x < w / zoom) {x = w / zoom;}
+                        if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+                        if (y < h / zoom) {y = h / zoom;}
+                        /*set the position of the magnifier glass:*/
+                        glass.style.left = (x - w) + "px";
+                        glass.style.top = (y - h) + "px";
+                        /*display what the magnifier glass "sees":*/
+                        glass.style.backgroundPosition = "-" + ((x * zoom) - w) + "px -" + ((y * zoom) - h) + "px";
+                      }
+                      function getCursorPos(e) {
+                        var a, x = 0, y = 0;
+                        e = e || window.event;
+                        /*get the x and y positions of the image:*/
+                        a = img.getBoundingClientRect();
+                        /*calculate the cursor's x and y coordinates, relative to the image:*/
+                        x = e.pageX - a.left;
+                        y = e.pageY - a.top;
+                        /*consider any page scrolling:*/
+                        x = x - window.pageXOffset;
+                        y = y - window.pageYOffset;
+                        return {x : x, y : y};
+                      }
+                    }
+                    magnify("mymagnifyimage", 3);
+                    </script>	
       			<div class="col-md-15">
 							<center><h3>INTERSTELLAR</h3></center>
 							<center><div >
                 <div class="details-description">
                                 <p></p>
 								<center><p><b><i>Interstellar</i></b> is a 2014 epic science fiction drama film directed, co-written, and co-produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine.</p></center>
-							</div>
+				</div>
+                <div id="magnifier" style="display: none; top: 184px; left: 169px;" data-spm-anchor-id="a2o4l.prod.0.i2.4b331700FfKG01"></div>
       			<div class="game-add">
       				<CENTER></CENTER><button class="btn btn-primary" type="submit">Add to Cart</button>
+                    <center> <a href="index.html" class="previous">&laquo; Previous</a> &nbsp;<a href="popular2015.html" class="next">Next &raquo;</a></center>
       			</div>
       		</div>
       		</div>    		
@@ -130,5 +188,8 @@
 		<p>Practicum Project &copy; 2018</p>
 	</div>
 </div>
+      </div>
+    </div>
+    </div>
 </body>
 </html>
