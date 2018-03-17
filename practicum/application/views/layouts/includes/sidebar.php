@@ -24,10 +24,9 @@
           <h3 class="panel-title">Categories</h3>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><a href="">Cellphone</a></li>
-          <li class="list-group-item"><a href="">Laptop</a></li>
-          <li class="list-group-item"><a href="">Tv</a></li>
-          <li class="list-group-item"><a href="">Refrigerator</a></li>
+          <?php foreach(get_categories_help() as $category) : ?>
+              <li class="list-group-item"><a href="<?php echo base_url(); ?>products/category/<?php echo $category->category_id; ?>"><?php echo $category->name; ?></a></li>
+          <?php endforeach; ?>
         </ul>
       </div>
       <!--List Group-->
@@ -36,9 +35,8 @@
           <h3 class="panel-title">Most popular</h3>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><a href="">Cellphone1</a></li>
-          <li class="list-group-item"><a href="">Laptop2</a></li>
-          <li class="list-group-item"><a href="">Tv3</a></li>
-          <li class="list-group-item"><a href="">Refrigerator4</a></li>
+          <?php foreach(get_popular_help() as $popular) : ?>
+              <li class="list-group-item"><a href="<?php echo base_url(); ?>products/details/<?php echo $popular->product_id; ?>"><?php echo $popular->title; ?></a></li>
+          <?php endforeach; ?>
         </ul>
       </div>

@@ -24,11 +24,11 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#">Practicum</a> </div>
+        <a class="navbar-brand" href="<?php echo base_url(); ?>">Practicum</a> </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="register.html">Create Account</a></li>
+            <li class="active"><a href="<?php echo base_url(); ?>">Home</a></li>
+            <li><a href="<?php echo base_url(); ?> /user/register">Create Account</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <div class="form-group">
@@ -56,33 +56,4 @@
             </div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div>      
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div>    
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div> 
-                <div class="col-md-4">
-                </div>   
+  
