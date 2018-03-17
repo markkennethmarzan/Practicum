@@ -26,27 +26,10 @@
         <a class="navbar-brand" href="#">Practicum</a>
         <button class="navbar-toggle" type="button"><a href="register.html">SIGN-UP</a></button>
        <button class="navbar-toggle" type="button"><a href="login.html">SIGN-IN</a></button>
-        <button class="navbar-toggle" type="button"><a href="index.html">HOME</a></button> 
-      <a class="navbar-brand" href="#">Practicum</a> </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="register.html">Create Account</a></li>
-      </ul>
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input name="username" type="text" class="form-control" placeholder="Enter Username">
-        </div>
-        <div class="form-group">
-          <input name="password" type="password" class="form-control" placeholder="Enter Password">
-        </div>
-        <button name="submit" type="submit" class="btn btn-default">Login</button>
-      </form>
-    </div>
-    <!--/.nav-collapse --> 
+        <button class="navbar-toggle" type="button"><a href="index.html">HOME</a></button>  
   </div>
-</nav>
-      
+    </div>
+    </nav>
 <div class="container">
   <div class="row">
     <div class="col-md-4">
@@ -67,7 +50,7 @@
             <p>
               <button class="btn btn-default" type="submit">Update Cart</button>
             </p>
-            <a class="btn btn-default" href="cart">Go to cart</a>
+            <a class="btn btn-default" href="cart.html">Go to cart</a>
           </table>
         </form>
       </div>
@@ -96,45 +79,48 @@
           <li class="list-group-item"><a href="popular2018.html">Popular Movie of 2018</a></li>
         </ul>
       </div>
-    </div> 
-   
+    </div>
           <div class="col-md-8">
               <div class="panel panel-default">
                   <div class="panel-heading panel-heading-green">
-                      <center><h3 class="panel-title">PRODUCT</h3></center>
+                <img src="pictures/index/source.gif" alt="" width="600" height="400" align="middle">
+                      <center><h3 class="panel-title">LOG-IN:</h3></center>
                   </div>
                   <div class="panel-body">
-					<div class="row details">
-                        <div class="col-md-12">
-							<img src="pictures/2014/LUCY1.jpg" alt="Lucy" class="center" height="650">
-						</div>
-						<div class="col-md-15">
-							<center><h3>LUCY</h3></center>
-							<center><div class="details-prirce">
-								Price : P1600
-							</div></center>
-							<div class="details-description">
-                                <p></p>
-								<center><p><b><i>Lucy</i></b> is a 2014 English-language French science fiction thriller film written and directed by Luc Besson and produced by his wife Virginie Besson-Silla for his company EuropaCorp. The film was shot in Taipei, Paris, and New York City.</p></center>
-							</div>
-							<div class="details-buy">
-								<form action="">
-									<center><button type="submit" name="buy_submit" class="btn btn-primary">Add to cart</button></center>
-								</form>
-                                <center> <a href="productGuardians.html" class="previous">&laquo; Previous</a> &nbsp;<a href="productMaleficent.html" class="next">Next &raquo;</a></center>
-							</div>
-						</div>
+                      <form role="form">
+                          <div class="form-group"> 
+                              <label>Email Address</label>
+                              <input type="text" class="form-control" name="email" placeholder="Enter your email address" maxlength="20">
+                          </div>
+                           <div class="form-group"> 
+                              <label>Password</label>
+                              <input type="text" class="form-control" name="password" placeholder="Enter password" maxlength="15">
+                          </div>
+                          <button onclick="myFunction()" class="navbar-toggle"><a href="index.html">LOGIN</a></button>
+                               <p id="demo"></p>
+                            <script>
+                            function myFunction() {
+                                var txt;
+                                var r = confirm("WELCOME TO OUR WEBSITE!");
+                                if (r == true) {
+                                    txt = "You pressed OK!";
+                                } else {
+                                    txt = "You pressed Cancel!";
+                                }
+                                document.getElementById("demo").innerHTML = txt;
+                            }
+                            </script>
+                      </form>
                   </div>
               </div>
-              </div>
       </div>
-  </div>
+    </div>
 </div>
-<!-- /.container --> 
+    <!-- /.container --> 
 <div class="row footer">
 	<div class="container">
-		<p>Practicum Project &copy; 2018</p>
+		<p>Practicum I Project &copy; 2018</p>
 	</div>
-</div>
+    </div>
 </body>
-</html>
+    </html>
