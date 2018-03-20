@@ -1,68 +1,35 @@
 body{
     padding-top: 75px;
-    background-image: url("2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;    
-    background-position: center;
-    background-color: antiquewhite; 
 }
-
-@font-face {
-    font-family: cursive;
-    font-weight: bold;
-}
-
-h3{
-    font-family: "Courier New", cursive;
-    font-weight: bold;
-    text-align: center:
-}
-div {
-    font-family: "Georgia", serif;
-    text-align: center:
-}
-
-.panel-title {
-    text-align: center;
-}
-
-ul{
-    text-align: center;
-}
-.sidenavbar a{
+.navbar a{
 	color: blue;
 }
-
 .cart-block{
 	background: #333;
 	color: #fff;
 	padding: 10px;
 	margin-bottom: 20px;
-    background-color: mediumaquamarine;
 }
-
 .panel-list a{
 	padding: 4px;
 	font-size: 18px;
 }
-
 .panel-list .panel-heading h3{
 	padding: 4px;
 	font-size: 18px;
-    background-color: skyblue;
 }
 .panel-heading-green{
-    text-align: center;
+
 }
 .panel-heading-dark{
-	text-align: center:
+	
 }
 .game{
 	display: relative;
 }
 .game-title{
 	text-align: center;
-	padding: 30px;
+	padding: 5px;
 }
 .game-price{
 	position: absolute;
@@ -90,10 +57,17 @@ ul{
 .details img{
 	width: 100%;
 }
+
+.qty{
+	width: 40px;
+	color: #666;
+	text-align: center;
+}
 .footer{
 	background: blue;
 	height: 70px;
 	color: wheat;
 	text-align: center;
 	padding: 20px;
+	margin-top: 20px;
 }
