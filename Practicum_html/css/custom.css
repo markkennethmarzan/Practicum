@@ -80,9 +80,6 @@ ul{
 	padding: 5px;
 	font-size: 22px;
 }
-.game img{
-	width: 100%;
-}
 
 * {box-sizing: border-box;}
 .img-magnifier-container {
@@ -107,7 +104,8 @@ ul{
 	margin-bottom: 20px;
 }
 .details img{
-	width: 100%;
+  width: 300px;
+  height: 450px;
 }
 
 a {

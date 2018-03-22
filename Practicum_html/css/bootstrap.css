@@ -204,10 +204,9 @@ pre {
 figure {
   margin: 0 0 1rem;
 }
-
-img {
-  vertical-align: middle;
-  border-style: none;
+img{
+    height: 250px;
+    width: 250px;
 }
 
 svg:not(:root) {
