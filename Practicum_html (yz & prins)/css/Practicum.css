@@ -102,6 +102,7 @@ body{
     margin-left: 7%;
     margin-right: 7%;
     color: #FFC43B;
+	justify-content:center;
 }
 
 div.panel.panel-default.panel-list{
@@ -142,7 +143,12 @@ h3{
 }
 
 .panel-body .col-md-4{
-width: 200px; 
+width: 150px; 
+height: 244px;
+padding: 30px;
+}
+.panel-body .col-md-4 img{
+	width:100%;
 }
 
 div.col-md-4{
@@ -161,7 +167,7 @@ div.container{
 }
 
 div.panel-body{
-    float: right;
+    width:1000px;
 }
 
 div.row.footer > div.container{
