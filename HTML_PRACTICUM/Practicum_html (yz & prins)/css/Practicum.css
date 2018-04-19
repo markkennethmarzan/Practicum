@@ -1,41 +1,75 @@
 /*start of navbar css*/
 
+/*holder for the contents of nav bar*/
 .nav_holder {
+  margin-top: 30px;
   overflow: hidden;
-  background-color: #000000;
-  border-radius: 0.6vw;
+  background-color: #FFC43B;
+  border-radius: 20px;
 }
 
+/*Links in the navbar*/
 .nav_holder a {
   float: left;
   text-decoration: none;
   display: block;
-  color: #FFC43B;
+  color: #000000;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1vw;
+  font-size: 25px;
   text-align: center;
-  padding: 0.8vw;
+  padding: 1.2vw;
 }
 
+/*When a user hover the links*/
 .nav_holder a:hover {
-  background-color: #FFC43B;
-  color: #000000;
+  background-color: #000000;
+  color: #FFC43B;
   transition: 0.6s;
 }
 
-.nav_holder a.active {
-  background-color: #FFC43B;
-  color: #000000;
+/*Determine what is the active link on the navbar*/
+.nav_holder a:active {
+  background-color: #000000;
+  color: #FFC43B;
 }
 
+/*The search bar*/
 .nav_holder input[type=text] {
   float: right;
   font-family: 'Orbitron', sans-serif;
   font-size: 1vw;
-  margin: 0.5vw;
-  border: none;
-  border-radius: 0.4vw;
-  padding: 0.3vw;
+  margin-top: 0.5vw;
+  margin-right: 0.5vw;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding: 0.8vw;
+  background-color: #FFC43B;
+}
+
+/*When a user hover the search bar*/
+.nav_holder input[type=text]:hover {
+ background-color: #000000;
+ transition: 0.5s;
+}
+
+/*Put color on the placeholder on the search bar*/
+::-webkit-input-placeholder {
+ color:#000000;
+}
+
+/*When a user hover the search bar the color of the placeholder will change*/
+#search:hover::-webkit-input-placeholder{
+ color:#FFC43B;
+}
+
+/*Color of the inputted text in the search bar*/
+input{
+ color: #FFC43B;
+}
+
+#search:focus {
+ outline: 0;
+ background-color: #000000;
 }
 
 @media screen and (max-width: 600px) {
@@ -57,18 +91,17 @@
 /*body*/
 
 html{
-    background-image: url(2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: hsl(0, 0%, 5%);
+    background-color: #000000;
 }
 
 body{
     font-family: 'Orbitron', sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-    color: hsl(50, 100%, 50%);
+    margin-left: 7%;
+    margin-right: 7%;
+    color: #FFC43B;
 }
 
 div.panel.panel-default.panel-list{
@@ -104,12 +137,24 @@ li.list-group-item:hover{
     
 }
 
-div.col-md-4{
-    width: 260px;
-    float:left
-
+h3{
+    text-align: center;
 }
 
+.panel-body .col-md-4{
+width: 200px; 
+}
+
+div.col-md-4{
+    width:270px;
+    float:left;
+}
+
+div.col-md-8{
+    float: left;
+    width: 800px;
+    padding: 10px;
+}
 
 div.container{
    clear: both;
