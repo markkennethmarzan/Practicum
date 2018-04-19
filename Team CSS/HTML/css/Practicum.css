@@ -67,13 +67,17 @@ input{
  color: #FFC43B;
 }
 
+/*If the search box click*/
 #search:focus {
  outline: 0;
  background-color: #000000;
 }
 
-@media screen and (max-width: 600px) {
-	
+@media screen and (max-width: 600px) {	
+  body{
+	margin:0%;
+  }
+  
   .nav_holder {
 	overflow: hidden;
 	width: 100%;
