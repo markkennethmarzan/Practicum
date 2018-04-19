@@ -172,7 +172,16 @@ div.col-md-4{
     width:270px;
     float:left;
 }
-
+.game-price{
+    position: relative;
+   top:200px; 
+   left: 0; 
+   width: 100%; 
+	background-color:#FFC43B;
+	font-size:30px;
+	color:white;
+	text-align:center;
+}
 div.col-md-8{
     float: left;
     width: 800px;
