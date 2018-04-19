@@ -2,10 +2,10 @@
 
 /*holder for the contents of nav bar*/
 .nav_holder {
-  margin-top: 30px;
+  margin-top: 2vw;
   overflow: hidden;
   background-color: #FFC43B;
-  border-radius: 20px;
+  border-radius: 1vw;
 }
 
 /*Links in the navbar*/
@@ -37,7 +37,7 @@
 .nav_holder input[type=text] {
   float: right;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1vw;
+  font-size: 20px;
   margin-top: 0.5vw;
   margin-right: 0.5vw;
   border: 2px solid #000000;
@@ -73,16 +73,33 @@ input{
 }
 
 @media screen and (max-width: 600px) {
-  .nav_holder a, .nav_holder input[type=text] {
+	
+  .nav_holder {
+	overflow: hidden;
+	width: 100%;
+  }
+
+  .nav_holder a {
     float: none;
     display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
+	width: 100%;
+    padding: 15px;
+    text-align: center;
+	font-size: 25px;
   }
+  
   .nav_holder input[type=text] {
-    border: 1px solid #ccc;  
+    float: none;
+    display: block;
+    width: 100%;
+    padding: 15px;
+	border-radius: 0vw;
+	text-align: center;
+	font-size: 25px;
+  }
+  
+  .nav_holder input[type=text] {
+    border: none;  
   }
 }
 
