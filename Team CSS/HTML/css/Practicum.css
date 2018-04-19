@@ -173,7 +173,6 @@ padding: 30px;
     width: 100%;
 }
 
-
 div.col-md-4{
     width:270px;
     float:left;
@@ -190,7 +189,7 @@ div.col-md-4{
 }
 div.col-md-8{
     float: left;
-    width: 800px;
+    width: 1000px;
     padding: 10px;
 }
 
