@@ -177,7 +177,7 @@ div.col-md-4{
    top:200px; 
    left: 0; 
    width: 100%; 
-	background-color:#FFC43B;
+	background-color:hsla(42, 100%, 62%, 0.61);
 	font-size:30px;
 	color:white;
 	text-align:center;
