@@ -1,0 +1,195 @@
+/*start of navbar css*/
+
+/*holder for the contents of nav bar*/
+.nav_holder {
+  margin-top: 30px;
+  overflow: hidden;
+  background-color: #FFC43B;
+  border-radius: 20px;
+}
+
+/*Links in the navbar*/
+.nav_holder a {
+  float: left;
+  text-decoration: none;
+  display: block;
+  color: #000000;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 1.2vw;
+}
+
+/*When a user hover the links*/
+.nav_holder a:hover {
+  background-color: #000000;
+  color: #FFC43B;
+  transition: 0.6s;
+}
+
+/*Determine what is the active link on the navbar*/
+.nav_holder a:active {
+  background-color: #000000;
+  color: #FFC43B;
+}
+
+/*The search bar*/
+.nav_holder input[type=text] {
+  float: right;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+  margin-right: 0.5vw;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding: 0.8vw;
+  background-color: #FFC43B;
+}
+
+/*When a user hover the search bar*/
+.nav_holder input[type=text]:hover {
+ background-color: #000000;
+ transition: 0.5s;
+}
+
+/*Put color on the placeholder on the search bar*/
+::-webkit-input-placeholder {
+ color:#000000;
+}
+
+/*When a user hover the search bar the color of the placeholder will change*/
+#search:hover::-webkit-input-placeholder{
+ color:#FFC43B;
+}
+
+/*Color of the inputted text in the search bar*/
+input{
+ color: #FFC43B;
+}
+
+#search:focus {
+ outline: 0;
+ background-color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .nav_holder a, .nav_holder input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .nav_holder input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/*end of navbar css*/
+
+/*body*/
+
+html{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000000;
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 7%;
+    margin-right: 7%;
+    color: #FFC43B;
+	justify-content:center;
+}
+
+div.panel.panel-default.panel-list{
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+ul.list-group{
+    padding: 0;
+}
+
+div.panel-heading.panel-heading-dark{
+    background-color: hsl(0, 0%, 20%);
+    padding: 1px;
+}
+
+li.list-group-item{
+    padding: 10px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 30%);
+    transition: 1s;
+	list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+    color: beige;
+}
+
+li.list-group-item:hover{
+    background-color: hsl(50, 100%, 50%);
+    
+}
+
+h3{
+    text-align: center;
+}
+
+.panel-body .col-md-4{
+width: 150px; 
+height: 244px;
+padding: 30px;
+}
+.panel-body .col-md-4 img{
+	width:100%;
+}
+
+div.col-md-4{
+    width:270px;
+    float:left;
+}
+.game-price{
+    position: relative;
+   top:200px; 
+   left: 0; 
+   width: 100%; 
+	background-color:#FFC43B;
+	font-size:30px;
+	color:white;
+	text-align:center;
+}
+div.col-md-8{
+    float: left;
+    width: 800px;
+    padding: 10px;
+}
+
+div.container{
+   clear: both;
+}
+
+div.panel-body{
+    width:1000px;
+}
+
+div.row.footer > div.container{
+    padding: 100px;
+}
+
+<!-- Star of NavBar -->
+<nav>
+	<div class="nav_holder">
+		<a class="active" href="#">Home</a>
+		<a href="#">Register</a>
+		<a href="#">Login</a>
+		<input type="text" placeholder="Search item ..." style="float: right">
+	</div>
+</nav>
+<!-- End of NavBar    -->

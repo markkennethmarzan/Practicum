@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>Practicum</title>
+    
+<!-- Bootstrap core CSS -->
+<link href="css/Practicum.css" rel="stylesheet" type="text/css">
+<!--Embeded CSS fonts-->
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<!-- ================================================== -->
+    
+<!-- Bootstrap core JavaScript -->   
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> 
+<script src="js/bootstrap.min.js"></script> 
+    
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<!-- ================================================== -->
+    
+</head>
+
+<body>
+
+    
+<!-- Star of NavBar -->
+<nav>
+	<div class="nav_holder">
+		<a class="active" href="#">Home</a>
+		<a href="register.html">Register</a>
+		<a href="">Login</a>
+		<input id="search" type="text" placeholder="Search item ...">
+	</div>
+</nav>
+<!-- End of NavBar    -->
+    
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="cart-block">
+        <form action="cart/update" method="post">
+          <table cellpadding="6" cellspacing="1" style="width: 100%" border="0">
+            <tr>
+              <th>QTY</th>
+              <th>Item Description</th>
+              <th style="text-align: right">Item Price</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="right"><strong>Total</strong></td>
+              <td class="right" style="text-align: right">P</td>
+            </tr>
+            <br>
+            <p>
+              <button class="btn btn-default" type="submit">Update Cart</button>
+            </p>
+            <a class="btn btn-default" href="cart.html">Go to cart</a>
+          </table>
+        </form>
+      </div>
+      <div class="panel panel-default panel-list">
+        <div class="panel-heading panel-heading-dark">
+          <h3 class="panel-title">YEAR OF RELEASE</h3>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="2014.html">Movies of Year 2014</a></li>
+          <li class="list-group-item"><a href="2015.html">Movies of Year 2015</a></li>
+          <li class="list-group-item"><a href="2016.html">Movies of Year 2016</a></li>
+          <li class="list-group-item"><a href="2017.html">Movies of Year 2017</a></li>
+          <li class="list-group-item"><a href="2018.html">Movies of Year 2018</a></li>
+        </ul>
+      </div>
+      <!--List Group-->
+            <div class="panel panel-default panel-list">
+        <div class="panel-heading panel-heading-dark">
+          <h3 class="panel-title">MOST POPULAR</h3>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="popular2014.html">Popular Movie of 2014</a></li>
+          <li class="list-group-item"><a href="popular2015.html">Popular Movie of 2015</a></li>
+          <li class="list-group-item"><a href="popular2016.html">Popular Movie of 2016</a></li>
+          <li class="list-group-item"><a href="popular2017.html">Popular Movie of 2017</a></li>
+          <li class="list-group-item"><a href="popular2018.html">Popular Movie of 2018</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading panel-heading-green">
+        <center><h1 class="panel-title">THE WORLD OF MOVIES</h1></center>
+      </div>
+      <div class="panel-body">
+      	<div class="row">
+      			<a href="2014.html">
+                    <img src="pictures/index/1234.png" alt="" width="750" height="700">
+      			</a>
+      			</div>
+      		</div>
+      		</div>    
+      	</div>
+      </div>
+<!-- /.container --> 
+<div class="row footer">
+	<div class="container">
+		<p>Practicum Project &copy; 2018</p>
+	</div>
+</div>
+</body>
+</html>
