@@ -109,8 +109,7 @@ input{
 
 /*end of navbar css*/
 
-/*body*/
-
+/*start of the body*/
 html{
     background-position: center;
     background-repeat: no-repeat;
@@ -122,9 +121,30 @@ body{
     font-family: 'Orbitron', sans-serif;
     margin-left: 7%;
     margin-right: 7%;
-    color: #FFC43B;
+    color: #000000;
 	justify-content:center;
 }
+
+.cart{
+	margin-top: 1vw;
+    overflow: auto;
+	border-radius: 0.5vw;
+
+}
+
+.cart th,td{
+	padding: 0.5vw;
+	border-bottom:3px solid #000000;
+	border-right:3px solid #000000;
+	border-radius: 0.5vw;
+	background:#FFC43B;
+}	
+
+/*customize cart*/
+
+/*end of the body*/
+
+
 
 div.panel.panel-default.panel-list{
     padding: 10px;
@@ -205,17 +225,3 @@ div.row.footer > div.container{
     padding: 10px;
     width: 100%;
 }
-
-
-
-
-<!-- Star of NavBar -->
-<nav>
-	<div class="nav_holder">
-		<a class="active" href="#">Home</a>
-		<a href="#">Register</a>
-		<a href="#">Login</a>
-		<input type="text" placeholder="Search item ..." style="float: right">
-	</div>
-</nav>
-<!-- End of NavBar    -->
