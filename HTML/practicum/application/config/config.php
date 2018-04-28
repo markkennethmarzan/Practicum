@@ -24,6 +24,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/practicum/';
+$config['shipping'] = 4.99;
+$config['tax'] = 2.99;
+$config['paypal_mode']				= 'live';
+$config['paypal_api_username'] 		= 'techguyinfo_api1.gmail.com';
+$config['paypal_api_password']		= '7E6XMZBD5MFDHA6B';
+$config['paypal_api_signature']		= 'A9UQTfOH0TrBuTt8FlB8N0fn3zfyAvhSVpmCmZeWVW5o0hm6n29sLTZj';
+$config['paypal_currency_code']		= 'USD';
+$config['paypal_return_url']		= 'http://techguystaging.com/simplecicart/cart/process';
+$config['paypal_cancel_url']		= 'http://techguystaging.com/simplecicart/cart/cancel';
 
 /*
 |--------------------------------------------------------------------------

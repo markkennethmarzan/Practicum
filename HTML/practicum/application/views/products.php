@@ -14,7 +14,7 @@
 				<input type="hidden" name="item_number" value="<?php echo $product->product_id; ?>" />
 				<input type="hidden" name="price" value="<?php echo $product->price; ?>" />
 				<input type="hidden" name="title" value="<?php echo $product->title; ?>" />
-				<button class="btn btn-primary" type="submit"> Add to Cart </button>
+				<button class="btn btn-primary mt-3" type="submit"> Add to Cart </button>
 			</form>
 		</div>
 	</div>

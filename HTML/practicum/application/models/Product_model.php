@@ -33,6 +33,7 @@ class Product_model extends CI_Model{
 		return $query->result();
  
 	}
+
 	//get products in the category
  	public function get_category_products($category_id){
  		$this->db->select('*');
@@ -42,4 +43,11 @@ class Product_model extends CI_Model{
   		$query = $this->db->get();
   		return $query->result();
  }
+ 	/*
+	 *	Add Order To Database
+	 */
+	 public function add_order($order_data){
+		$insert = $this->db->insert('orders', $order_data);
+        return $insert;
+	}
 }

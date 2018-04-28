@@ -21,7 +21,7 @@ class Users extends CI_Controller{
             }
 		}	
 	}
-	
+
 	public function login(){
 		$this->form_validation->set_rules('username','Username','trim|required|min_length[4]|max_length[16]');
         $this->form_validation->set_rules('password','Password','trim|required|min_length[4]|max_length[50]');
@@ -47,7 +47,7 @@ class Users extends CI_Controller{
 			redirect('products');
         } else {
             //Set error
-             $this->session->set_flashdata('fail_login', 'Sorry, the login info that you entered is invalid..');
+             $this->session->set_flashdata('fail_login', 'Sorry, the login info that you entered is invalid');
 			redirect('products');
         }
 	}

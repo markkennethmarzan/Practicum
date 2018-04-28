@@ -21,7 +21,7 @@
 <body>
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -29,7 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo base_url(); ?>">Practicum</a>
+          <a class="navbar-brand" href="<?php echo base_url(); ?>">Shopping Cart</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -56,8 +56,9 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    
-    <div class="container">
+
+
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
           <?php $this->load->view('layouts/includes/sidebar'); ?>
