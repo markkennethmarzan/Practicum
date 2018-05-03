@@ -16,6 +16,7 @@
   <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script> 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
   <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Permanent+Marker" rel="stylesheet">
 </head>
 
 <body>
@@ -23,37 +24,8 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="<?php echo base_url(); ?>">Shopping Cart</a>
+          <b><a class="navbar-brand" href="<?php echo base_url(); ?>">Shopping Cart</a></b>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="<?php echo base_url(); ?>">Home</a></li>
-      <?php if(!$this->session->userdata('logged_in')) : ?>
-        <li><a href="<?php echo base_url(); ?>users/register">Create Account</a></li>
-      <?php endif; ?>
-      </ul>
-      <?php if(!$this->session->userdata('logged_in')) : ?>
-       <form method="post" action="<?php echo base_url(); ?>users/login" class="navbar-form navbar-right">
-        <div class="form-group">
-          <input name="username" type="text" class="form-control" placeholder="Enter Username">
-        </div>
-        <div class="form-group">
-          <input name="password" type="password" class="form-control" placeholder="Enter Password">
-        </div>
-        <button name="submit" type="submit" class="btn btn-default">Login</button>
-      </form>
-    <?php else : ?>
-    <form class="navbar-form navbar-right" method="post" action="<?php echo base_url(); ?>users/logout">
-      <button name="submit" type="submit" class="btn btn-default">Logout</button>
-    </form>
-    <?php endif; ?>
-        </div><!--/.nav-collapse -->
       </div>
     </div>
 
