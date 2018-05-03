@@ -74,11 +74,12 @@ a{
 	text-align: center;
 }
 .footer{
-	background: blue;
+	background: #3d5272;
 	height: 70px;
 	color: wheat;
 	text-align: center;
 	padding: 20px;
+    margin-top: 20px;
 }
 
 .cart-block{
@@ -132,4 +133,26 @@ a.navbar-brand{
 button, .btn.btn-primary {
     color: white;
    background-color: #3d5272;
+}
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 40%;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    left: 35%;
+    background: rgba(61, 82, 114, 0.59);
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
 }

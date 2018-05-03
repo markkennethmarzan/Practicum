@@ -1,8 +1,8 @@
 <?php foreach($products as $product) : ?>
- <div class="col-md-4 game">
-  <div class="game-price"><?php echo $product->price; ?></div>
+ <div class="col-md-4 thumbnail">
+  <div class="caption"><?php echo $product->price; ?></div>
    <a href="<?php echo base_url(); ?>products/details/<?php echo $product->product_id; ?>">
-    <img src="<?php echo base_url(); ?>assets/images/<?php echo $product->image; ?>" />
+    <img class="center" src="<?php echo base_url(); ?>assets/images/<?php echo $product->image; ?>" />
    </a>
    <div class="game-title">
     <?php echo $product->title; ?>
