@@ -1,8 +1,8 @@
              <div class="row details">
-              <div class="col-md-4">
+              <div class="col-md-6 w-50 m-auto">
                  <img src="<?php echo base_url(); ?>assets/images/<?php echo $product->image ?>"/>
              </div>
-             <div class="col-md-8">
+             <div class="col-md-10 ml-5 pl-5 text-center">
                <h3><?php echo $product->title; ?></h3>
                <div class="details-prirce">
                 <?php echo $product->price; ?>
