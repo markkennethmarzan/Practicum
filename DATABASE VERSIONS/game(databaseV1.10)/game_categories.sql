@@ -2,7 +2,7 @@
 --
 -- Host: 127.0.0.1    Database: game
 -- ------------------------------------------------------
--- Server version	5.5.5-10.1.31-MariaDB
+-- Server version	5.5.5-10.1.32-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -16,32 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `users`
+-- Table structure for table `categories`
 --
 
-DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS `categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `users` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(100) CHARACTER SET latin1 NOT NULL,
-  `last_name` varchar(100) CHARACTER SET latin1 NOT NULL,
-  `email` varchar(45) CHARACTER SET latin1 NOT NULL,
-  `username` varchar(45) CHARACTER SET latin1 NOT NULL,
-  `password` varchar(45) CHARACTER SET latin1 NOT NULL,
-  `join_date` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin5;
+CREATE TABLE `categories` (
+  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`category_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin5;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `categories`
 --
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Julina','Gaddi','2164296@slu.edu.ph','Juliii','cae7d8f5c4d9a6a1a127a9d18faff084',NULL),(2,'123','123123','2164296@slu.edu.ph','1234567890','cae7d8f5c4d9a6a1a127a9d18faff084',NULL);
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+LOCK TABLES `categories` WRITE;
+/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
+INSERT INTO `categories` VALUES (1,'Gaming Desktops'),(2,'Gaming Laptops'),(3,'PC Gaming'),(4,'Digital Games'),(5,'VR Accessories'),(6,'PS4 Games'),(7,'XBOX One Games'),(8,'Computer Accessories');
+/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-28 18:24:17
+-- Dump completed on 2018-05-20 21:45:43
