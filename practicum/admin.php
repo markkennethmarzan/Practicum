@@ -9,14 +9,19 @@ mysqli_select_db($link, "game");
 
 	<head>
 		<title>Admin</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	</head>
 	
 	<body>
+		<div class="title_container">
+		<p class="title">ADMIN</p>
+		</div>
+		
 		<form name="products_form" action="" method="post">
-		<table>
+		<table align="center">
 			<tr>
-			<td colspan="2">INSERT PRODUCTS TO DATA BASE</td>
+			<td colspan="2" class="header">INSERT PRODUCTS TO DATA BASE</td>
 			</tr>
 			
 			<tr>
@@ -63,7 +68,7 @@ mysqli_select_db($link, "game");
 <!-------------------------------------------------------------------------------------------------->
 			
 			<tr>
-				<td colspan="2">DELETE RECORD TO DATA BASE</td>
+				<td colspan="2" class="header">DELETE RECORD TO DATA BASE</td>
 			</tr>
 			
 			<tr>
@@ -80,11 +85,11 @@ mysqli_select_db($link, "game");
 <!-------------------------------------------------------------------------------------------------->
 			
 			<tr>
-				<td colspan="2">UPDATE RECORD TO DATA BASE</td>
+				<td colspan="2" class="header">UPDATE RECORD TO DATA BASE</td>
 			</tr>
 			
 			<tr>
-				<td>Enter first the product ID of the item:</td>
+				<td class="primary">Enter first the product ID of the item:</td>
 				<td><input type="text" name="uproduct_id"></td>
 			</tr>
 			
@@ -165,7 +170,7 @@ mysqli_select_db($link, "game");
 <!-------------------------------------------------------------------------------------------------->
 			
 			<tr>
-			<td colspan="2">SEARCH RECORD TO DATA BASE</td>
+			<td colspan="2" class="header">SEARCH RECORD TO DATA BASE</td>
 			</tr>
 			
 			
@@ -184,7 +189,7 @@ mysqli_select_db($link, "game");
 			
 		</table>
 		</form>
-
+		
 		
 		
 <?php
